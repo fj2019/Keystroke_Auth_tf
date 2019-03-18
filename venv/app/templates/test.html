@@ -1,0 +1,24 @@
+<!-- coding:utf-8 -->
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>北邮人论坛</h1>
+<form action="" method="post" name="col1">
+    {{form.hidden_tag()}}
+    <p><input type="submit" value="编辑帖子"></p>
+
+    <p>
+        请输入贴子内容（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+</form>
+<div class="container">
+{% for message in get_flashed_messages() %}
+<div class="alert alert-warning">
+{{ message }}
+</div>
+{% endfor %}
+{% block page_content %}{% endblock %}
+</div>
+{% endblock %}

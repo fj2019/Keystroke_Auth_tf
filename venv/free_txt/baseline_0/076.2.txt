@@ -1,0 +1,14 @@
+Z 90 key down 507323203
+Z 90 key up 507323281
+Oem_2 191 key down 507324078
+Oem_2 191 key up 507324140
+V 86 key down 507466156
+V 86 key up 507466234
+Oem_2 191 key down 507466671
+Oem_2 191 key up 507466734
+A 65 key down 507519265
+A 65 key up 507519343
+A 65 key down 507519468
+A 65 key up 507519546
+Oem_2 191 key down 507520265
+Oem_2 191 key up 507520328

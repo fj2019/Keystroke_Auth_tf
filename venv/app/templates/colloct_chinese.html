@@ -1,0 +1,31 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Colloct Data</h1>
+<form action="" method="post" name="col1">
+    {{form.hidden_tag()}}
+    <p><input type="submit" value="开始采集"></p>
+    <p>
+    描述你在大学或高中最喜欢的课程以及你喜欢它的原因。 描述你在大学或高中最不喜欢的课程以及教师如何使它更有趣。 你喜欢课堂上的互动吗？ 您如何看待实验室？
+    </p>
+    <p>
+        请随便回答上述问题（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+     <p>
+     描述你人生中最难忘的事。你最喜欢哪本书原因是什么？
+     </p>
+    <p>
+        请输入上述文本（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+     <p>
+         给你的父母写一段话。
+    </p>
+    <p>
+        请回答上述问题（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+</form>
+{% endblock %}

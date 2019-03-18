@@ -1,0 +1,14 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - keystroke</title>
+    {% else %}
+    <title>colloct data</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>ColloctWeb: <a href="/colloct1">Home</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>

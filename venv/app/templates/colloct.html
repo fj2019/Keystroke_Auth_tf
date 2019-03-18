@@ -1,0 +1,39 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Colloct Data</h1>
+<form action="" method="post" name="col1">
+    {{form.hidden_tag()}}
+    <p><input type="submit" value="开始采集"></p>
+    <p>
+        These were the hard and heavy tidings for which I called upon the House and the nation to prepare themselves a week ago. The whole root and core and brain of the British Army, on which and around which we were to build, and are to build, the great British Armies in the later years of the war, seemed about to perish upon the field or to be led into an ignominious and starving captivity. The enemy attacked on all sides with great strength and fierceness, and their main power, the power of their far more numerous Air Force, was thrown into the battle or else concentrated upon Dunkirk and the beaches. Pressing in upon the narrow exit, both from the east and from the west, the enemy began to fire with cannon upon the beaches by which alone the shipping could approach or depart.
+        They sowed magnetic mines in the channels and seas; they sent repeated waves of hostile aircraft, sometimes more than a hundred strong in one formation, to cast their bombs upon the single pier that remained, and upon the sand dunes on which the troops had their eyes for shelter. Their U-boats, one of which was sunk, and their motor launches took their toll of the vast traffic which now began. For four or five days an intense struggle reigned. All their armored divisions-or what Was left of them-together with great masses of infantry and artillery, hurled themselves in vain upon the ever-narrowing, ever-contracting appendix within which the British and French Armies fought.
+        Meanwhile, the Royal Navy, with the willing help of countless merchant seamen, strained every nerve to embark the British and Allied troops; 220 light warships and 650 other vessels were engaged.
+    </p>
+    <p>
+        请输入上述文本（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+     <p>
+        He was so roughly handled that he did not hurry their departure seriously. We must be very careful not to assign to this deliverance the attributes of a victory. Wars are not won by evacuations. But there was a victory inside this deliverance, which should be noted. It was gained by the Air Force. Many of our soldiers coming back have not seen the Air Force at work; they saw only the bombers which escaped its protective attack. They underrate its achievements. I have heard much talk of this; that is why I go out of my way to say this. I will tell you about it.This was a great trial of strength between the British and German Air Forces. Can you conceive a greater objective for the Germans in the air than to make evacuation from these beaches impossible, and to sink all these ships which were displayed, almost to the extent of thousands?
+        Could there have been an objective of greater military importance and significance for the whole purpose of the war than this? They tried hard, and they were beaten back; they were frustrated in their task. We got the Army away; and they have paid fourfold for any losses which they have inflicted.When we consider how much greater would be our advantage in defending the air above this Island against an overseas attack, I must say that I find in these facts a sure basis upon which practical and reassuring thoughts may rest. I will pay my tribute to these young airmen. The great French Army was very largely, for the time being, cast back and disturbed by the onrush of a few thousands of armored vehicles. May it not also be that the cause of civilization itself will be defended by the skill and devotion of a few thousand airmen?
+    </p>
+    <p>
+        请输入上述文本（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+     <p>
+        Describe your favorite class in college or high school and
+        why you like it. Describe your least favorite class in college
+        or high school and how the instructor can make it more
+        interesting. Do you like interaction in classes? What do
+        you think about labs? Do you find them useful in learning
+        the concepts of a class?
+    </p>
+    <p>
+        请回答上述问题（如果结束输入请输/）:<br>
+        {{form.openid(cols=100,rows=10)}}<br>
+    </p>
+</form>
+{% endblock %}
